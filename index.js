@@ -25,6 +25,7 @@ statesAndLgas  = {
     'Edo': ['Akoko-Edo', 'Egor', 'Esan Central', 'Esan North-East', 'Esan South-East', 'Esan West', 'Etsako Central', 'Etsako East', 'Etsako West', 'Oredo', 'Ovia North-East', 'Ovia South-West', 'Uhunmwonde'],
     'Ekiti': ['Ado Ekiti', 'Ikere Ekiti', 'Ise/Orun', 'Oye Ekiti', 'Ekiti West', 'Ekiti South-West', 'Ekiti South-East', 'Ekiti North', 'Ikole Ekiti'],
     'Enugu': ['Enugu East', 'Enugu North', 'Enugu South', 'Ezeagu', 'Igbo-Etiti', 'Igbo-Eze North', 'Igbo-Eze South', 'Isi-Uzo', 'Nkanu East', 'Nkanu West', 'Nsukka', 'Udenu', 'Udi', 'Uzo-Uwani'],
+    'FCT': ['Abaji', 'Abuja Municipal', 'Bwari', 'Gwagwalada', 'Kuje', 'Kwali'],
     'Gombe': ['Akko', 'Balanga', 'Billiri', 'Dukku', 'Funakaye', 'Gombe', 'Kaltungo', 'Kwami', 'Nafada', 'Shongom', 'Yamaltu/Deba'],
     'Imo': ['Aboh Mbaise', 'Ahiazu Mbaise', 'Ehime Mbano', 'Ezinihitte', 'Ideato North', 'Ideato South', 'Ihitte/Uboma', 'Ikeduru', 'Ikpator', 'Isiala Mbano', 'Isu', 'Mbaitoli', 'Ngor Okpala', 'Njaba', 'Nkwerre', 'Nwangele', 'Nwodo', 'Oguta', 'Ohaji/Egbema', 'Orlu', 'Orsu', 'Oru East', 'Oru West', 'Umuahia North', 'Umuahia South'],
     'Jigawa': ['Birnin Kudu', 'Dutse', 'Gagarawa', 'Garki', 'Gumel', 'Guri', 'Gwaram', 'Gwiwa', 'Hadejia', 'Jahun', 'Kafin Hausa', 'Kaugama', 'Kazaure', 'Kirikasamma', 'Kiyawa', 'Maigatari', 'Miga', 'Ringim', 'Roni', 'Sule Tankarkar', 'Taura', 'Yankwashi'],
