@@ -1,10 +1,12 @@
 {
   "name": "nigeria-states-lga-select",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A package to get Nigerian states and their Local Government Areas (LGAs)",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "ts-node test.ts"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,9 @@
     "select"
   ],
   "author": "Anibe Samuel",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "typescript": "^5.5.4"
+  }
 }
