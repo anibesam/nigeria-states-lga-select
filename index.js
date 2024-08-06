@@ -1,3 +1,4 @@
+"use strict";
 /*
 
   ***************************************
@@ -8,9 +9,9 @@
   
 
 */
-
-
-statesAndLgas  = {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getLgas = exports.getStates = void 0;
+const statesAndLgas = {
     'Abia': ['Aba North', 'Aba South', 'Isiala Ngwa North', 'Isiala Ngwa South', 'Isuikwuato', 'Obingwa', 'Ohafia', 'Osisioma', 'Ugwunagbo', 'Umuahia North', 'Umuahia South', 'Ukwuani'],
     'Adamawa': ['Demsa', 'Fufore', 'Ganye', 'Girei', 'Gombi', 'Jada', 'Madagali', 'Maiha', 'Mayo-Belwa', 'Mubi North', 'Mubi South', 'Numan', 'Shelleng', 'Song', 'Yola North', 'Yola South'],
     'Akwa Ibom': ['Abak', 'Eastern Obolo', 'Eket', 'Esit Eket', 'Essien Udim', 'Etim Ekpo', 'Etinan', 'Ibiono Ibom', 'Ibesikpo Asutan', 'Ika', 'Ikono', 'Ikot Abasi', 'Ikot Ekpene', 'Ini', 'Itu', 'Mbo', 'Mkpat Enin', 'Nsit Atai', 'Nsit Ibom', 'Nsit Ubium', 'Obot Akara', 'Oron', 'Oruk Anam', 'Udung Uko', 'Uruan', 'Uyo'],
@@ -31,7 +32,6 @@ statesAndLgas  = {
     'Jigawa': ['Birnin Kudu', 'Dutse', 'Gagarawa', 'Garki', 'Gumel', 'Guri', 'Gwaram', 'Gwiwa', 'Hadejia', 'Jahun', 'Kafin Hausa', 'Kaugama', 'Kazaure', 'Kirikasamma', 'Kiyawa', 'Maigatari', 'Miga', 'Ringim', 'Roni', 'Sule Tankarkar', 'Taura', 'Yankwashi'],
     'Kaduna': ['Birnin Gwari', 'Chikun', 'Giwa', 'Igabi', 'Ikara', 'Jaba', 'Jema’a', 'Kachia', 'Kaduna North', 'Kaduna South', 'Kagarko', 'Kajuru', 'Kano', 'Kaura', 'Kauru', 'Kubau', 'Kudan', 'Lere', 'Makoda', 'Soba', 'Zangon Kataf'],
     'Kano': ['Ajingi', 'Albasu', 'Bagwai', 'Bebeji', 'Bichi', 'Bunkure', 'Dala', 'Dambatta', 'Dawakin Kudu', 'Dawakin Tofa', 'Doguwa', 'Fagge', 'Gabasawa', 'Garko', 'Garun Mallam', 'Gaya', 'Gezawa', 'Gwarzo', 'Kano', 'Karaye', 'Kibiya', 'Kiru', 'Kumbotso', 'Kunchi', 'Kura', 'Madobi', 'Makoda', 'Minjibir', 'Nasarawa', 'Rimin Gado', 'Rogo', 'Sumaila', 'Tudun Wada', 'Wudil'],
-    'Kogi': ['Adavi', 'Ajaokuta', 'Ankpa', 'Bassa', 'Dekina', 'Ibaji', 'Idah', 'Igalamela Odolu', 'Igalamela Odolu', 'Ijumu', 'Kogi', 'Mopamuro', 'Ofu', 'Ogori/Mangongo', 'Okehi', 'Okene', 'Olamaboro', 'Omala', 'Yagba East', 'Yagba West'],
     'Katsina': ['Batagarawa', 'Batsari', 'Baure', 'Bindawa', 'Charanchi', 'Dandume', 'Danja', 'Dutsi', 'Dutsin-Ma', 'Funtua', 'Jibia', 'Kaita', 'Kankara', 'Kankia', 'Katsina', 'Katsina', 'Kibiri', 'Kofar Soro', 'Kurfi', 'Kusada', 'Mai’adua', 'Malumfashi', 'Mani', 'Mashi', 'Matazu', 'Musawa', 'Rimi', 'Sabuwa', 'Safana', 'Sandamu', 'Zango'],
     'Kebbi': ['Aleiro', 'Arewa', 'Argungu', 'Augie', 'Bagudo', 'Birnin Kebbi', 'Dandi', 'Gwandu', 'Jega', 'Koko-Besse', 'Maiyama', 'Ngaski', 'Sakaba', 'Shanga', 'Suru', 'Wasagu/Danko', 'Yauri'],
     'Kogi': ['Adavi', 'Ajaokuta', 'Ankpa', 'Bassa', 'Dekina', 'Ibaji', 'Idah', 'Igalamela Odolu', 'Ijumu', 'Kogi', 'Mopamuro', 'Ofu', 'Ogori/Mangongo', 'Okehi', 'Okene', 'Olamaboro', 'Omala', 'Yagba East', 'Yagba West'],
@@ -49,11 +49,8 @@ statesAndLgas  = {
     'Taraba': ['Ardo Kola', 'Bali', 'Donga', 'Gashaka', 'Gassol', 'Gassol', 'Ibi', 'Jalingo', 'Kumi', 'Kurmi', 'Lau', 'Niger', 'Takum', 'Ussa', 'Wukari', 'Yorro'],
     'Yobe': ['Bade', 'Bursari', 'Damaturu', 'Fika', 'Fune', 'Geidam', 'Gujba', 'Gulani', 'Jakusko', 'Karasuwa', 'Nangere', 'Nguru', 'Potiskum', 'Tarmuwa', 'Yunusari', 'Yusufari'],
     'Zamfara': ['Anka', 'Bakura', 'Birnin Magaji', 'Bukkuyum', 'Bungudu', 'Gummi', 'Gusau', 'Kaura Namoda', 'Maradun', 'Maru', 'Shinkafi', 'Talata Mafara', 'Zumi']
-  };
-
-
+};
 const getStates = () => Object.keys(statesAndLgas);
-
+exports.getStates = getStates;
 const getLgas = (state) => statesAndLgas[state] || [];
-
-module.exports = { getStates, getLgas };
+exports.getLgas = getLgas;
