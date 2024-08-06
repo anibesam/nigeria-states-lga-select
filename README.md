@@ -32,6 +32,33 @@ console.log(abiaLgas);
 
 
 
+## Function
+
+
+- getStates(): Returns an array of all Nigerian states.
+  
+- getLgas(state): Returns an array of LGAs for the given state. If the state is not found, it returns an empty array.
+
+
+## Uninstallation
+
+```bash
+
+npm uninstall nigeria-states-lga-select
+
+```
+
+##  Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Author
+Anibe Samuel
+
+
+
 
 
 
