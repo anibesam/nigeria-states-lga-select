@@ -1,6 +1,6 @@
 {
   "name": "nigeria-states-lga-select",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A package to get Nigerian states and their Local Government Areas (LGAs)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -24,5 +24,8 @@
   "devDependencies": {
     "@types/node": "^22.1.0",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "nigeria-states-lga-select": "^1.0.9"
   }
 }
