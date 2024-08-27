@@ -1,6 +1,6 @@
 {
   "name": "nigeria-states-lga-select",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A package to get Nigerian states and their Local Government Areas (LGAs)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
